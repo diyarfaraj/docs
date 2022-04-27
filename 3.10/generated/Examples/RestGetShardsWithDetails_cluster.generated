@@ -3,10 +3,9 @@
 HTTP/1.1 200 OK
 content-type: application/json
 connection: Keep-Alive
-content-length: 841
-location: /_db/_system/_api/collection/testCollection/shards
+content-length: 637
+location: /_api/collection/testCollection/shards
 server: ArangoDB
-x-arango-queue-time-seconds: 0.000000
 x-content-type-options: nosniff
 
-"{\"error\":false,\"code\":200,\"shards\":{\"s10049\":[\"PRMR-a630e1f0-ea84-47eb-95c8-8b356dc03f4a\",\"PRMR-5f141ed6-1498-4707-beb9-cac610140cf7\"],\"s10050\":[\"PRMR-5f141ed6-1498-4707-beb9-cac610140cf7\",\"PRMR-a630e1f0-ea84-47eb-95c8-8b356dc03f4a\"],\"s10051\":[\"PRMR-a630e1f0-ea84-47eb-95c8-8b356dc03f4a\",\"PRMR-5f141ed6-1498-4707-beb9-cac610140cf7\"]},\"writeConcern\":1,\"waitForSync\":false,\"usesRevisionsAsDocumentIds\":true,\"syncByRevision\":true,\"shardingStrategy\":\"hash\",\"schema\":null,\"isSmartChild\":false,\"name\":\"testCollection\",\"statusString\":\"loaded\",\"isSmart\":false,\"replicationFactor\":2,\"type\":2,\"status\":3,\"cacheEnabled\":false,\"isSystem\":false,\"globallyUniqueId\":\"c10048/\",\"shardKeys\":[\"_key\"],\"isDisjoint\":false,\"numberOfShards\":3,\"id\":\"10048\",\"minReplicationFactor\":1,\"internalValidatorType\":0,\"keyOptions\":{\"allowUserKeys\":true,\"type\":\"traditional\"}}"
+"{\"error\":false,\"code\":200,\"shards\":{\"s2010053\":[\"PRMR-cda6ccd4-4808-44b7-9e18-7092cfa7c9d6\"],\"s2010054\":[\"PRMR-0e7767e2-21c8-463e-9039-65b7b3b9a2cf\"],\"s2010055\":[\"PRMR-cda6ccd4-4808-44b7-9e18-7092cfa7c9d6\"]},\"writeConcern\":1,\"shardingStrategy\":\"hash\",\"shardKeys\":[\"_key\"],\"replicationFactor\":1,\"waitForSync\":false,\"numberOfShards\":3,\"statusString\":\"loaded\",\"status\":3,\"type\":2,\"schema\":null,\"globallyUniqueId\":\"c2010052/\",\"isSmartChild\":false,\"id\":\"2010052\",\"cacheEnabled\":false,\"minReplicationFactor\":1,\"name\":\"testCollection\",\"isDisjoint\":false,\"isSmart\":false,\"keyOptions\":{\"allowUserKeys\":true,\"type\":\"traditional\"},\"isSystem\":false}"

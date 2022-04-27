@@ -5,7 +5,6 @@
     "description" : "abort transfer with given status-id (upload/download operation)",
     "dynamic" : false,
     "enterpriseOnly" : true,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -25,7 +24,6 @@
     "description" : "whether to attempt to continue in face of errors; may result in inconsistent backup state (create operation)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -34,7 +32,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "",
     "type" : "boolean"
@@ -45,7 +42,6 @@
     "description" : "check the configuration and exit",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -65,7 +61,6 @@
     "description" : "the configuration file or 'none'",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -85,7 +80,6 @@
     "description" : "the configuration file or 'none'",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -106,7 +100,6 @@
     "description" : "define key=value for a @key@ entry in config file",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -125,7 +118,6 @@
     "description" : "dump dependency graph",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -144,7 +136,6 @@
     "description" : "dump configuration options in JSON format",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -164,7 +155,6 @@
     "description" : "abort transactions if needed to ensure a consistent snapshot. This option can destroy the atomicity of your transactions in the presence of intermediate commits! Use it with great care and only if you really need a consistent backup at all costs (create operation)",
     "dynamic" : false,
     "enterpriseOnly" : true,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -173,7 +163,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "",
     "type" : "boolean"
@@ -185,7 +174,6 @@
     "description" : "a unique identifier for a backup (restore/upload/download operation)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -205,7 +193,6 @@
     "description" : "ignore stored version of a backup. Restore may not work if versions mismatch (restore operation)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -214,7 +201,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "",
     "type" : "boolean"
@@ -226,7 +212,6 @@
     "description" : "an additional label to add to the backup identifier (create operation)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -250,7 +235,6 @@
     "description" : "the global or topic-specific log level",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -263,6 +247,29 @@
     "section" : "",
     "type" : "string..."
   },
+  "log.api-enabled" : {
+    "category" : "option",
+    "default" : "true",
+    "deprecatedIn" : null,
+    "description" : "whether the log api is enabled (true) or not (false), or only enabled for superuser JWT (jwt)",
+    "dynamic" : false,
+    "enterpriseOnly" : false,
+    "hidden" : false,
+    "introducedIn" : [
+      "v3.4.11",
+      "v3.5.6",
+      "v3.6.5"
+    ],
+    "obsolete" : false,
+    "os" : [
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "requiresValue" : true,
+    "section" : "log",
+    "type" : "string"
+  },
   "log.color" : {
     "category" : "option",
     "default" : true,
@@ -270,7 +277,6 @@
     "description" : "use colors for TTY logging",
     "dynamic" : true,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -279,53 +285,25 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
   },
-  "log.escape-control-chars" : {
+  "log.escape" : {
     "category" : "option",
     "default" : true,
     "deprecatedIn" : null,
-    "description" : "escape control characters when logging",
+    "description" : "escape characters when logging",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
-    "introducedIn" : [
-      "v3.9.0"
-    ],
+    "introducedIn" : null,
     "obsolete" : false,
     "os" : [
       "linux",
       "macos",
       "windows"
     ],
-    "required" : false,
-    "requiresValue" : false,
-    "section" : "log",
-    "type" : "boolean"
-  },
-  "log.escape-unicode-chars" : {
-    "category" : "option",
-    "default" : false,
-    "deprecatedIn" : null,
-    "description" : "escape unicode characters when logging",
-    "dynamic" : false,
-    "enterpriseOnly" : false,
-    "experimental" : false,
-    "hidden" : false,
-    "introducedIn" : [
-      "v3.9.0"
-    ],
-    "obsolete" : false,
-    "os" : [
-      "linux",
-      "macos",
-      "windows"
-    ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -337,7 +315,6 @@
     "description" : "shortcut for '--log.output file://<filename>'",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -357,7 +334,6 @@
     "description" : "group to use for new log file, user must be a member of this group",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : [
       "v3.4.5"
@@ -379,7 +355,6 @@
     "description" : "mode to use for new log file, umask will be applied as well",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : [
       "v3.4.5"
@@ -401,7 +376,6 @@
     "description" : "do not start a seperate thread for logging",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -410,7 +384,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -422,7 +395,6 @@
     "description" : "also log to tty if backgrounded",
     "dynamic" : true,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -431,32 +403,9 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
-  },
-  "log.hostname" : {
-    "category" : "option",
-    "default" : "",
-    "deprecatedIn" : null,
-    "description" : "hostname to use in log message (empty for none, use 'auto' to automatically figure out hostname)",
-    "dynamic" : false,
-    "enterpriseOnly" : false,
-    "experimental" : false,
-    "hidden" : false,
-    "introducedIn" : [
-      "v3.8.0"
-    ],
-    "obsolete" : false,
-    "os" : [
-      "linux",
-      "macos",
-      "windows"
-    ],
-    "requiresValue" : true,
-    "section" : "log",
-    "type" : "string"
   },
   "log.ids" : {
     "category" : "option",
@@ -465,7 +414,6 @@
     "description" : "log unique message ids",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : [
       "v3.5.0"
@@ -476,7 +424,25 @@
       "macos",
       "windows"
     ],
-    "required" : false,
+    "requiresValue" : false,
+    "section" : "log",
+    "type" : "boolean"
+  },
+  "log.keep-logrotate" : {
+    "category" : "option",
+    "default" : false,
+    "deprecatedIn" : null,
+    "description" : "keep the old log file after receiving a sighup",
+    "dynamic" : false,
+    "enterpriseOnly" : false,
+    "hidden" : true,
+    "introducedIn" : null,
+    "obsolete" : false,
+    "os" : [
+      "linux",
+      "macos",
+      "windows"
+    ],
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -490,7 +456,6 @@
     "description" : "the global or topic-specific log level",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -510,7 +475,6 @@
     "description" : "include the function name, file name and line number of the source code that issues the log message. Format: `[func@FileName.cpp:123]`",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -519,28 +483,21 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
   },
   "log.max-entry-length" : {
-    "base" : 1,
     "category" : "option",
     "default" : 134217728,
     "deprecatedIn" : null,
     "description" : "maximum length of a log entry (in bytes)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : [
       "v3.7.9"
     ],
-    "maxInclusive" : true,
-    "maxValue" : 4294967295,
-    "minInclusive" : true,
-    "minValue" : 0,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -559,7 +516,6 @@
     "description" : "log destination(s), e.g. file:///path/to/file (any '$PID' will be replaced with the process id)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -581,7 +537,6 @@
     "description" : "shortcut for '--log.level performance=trace'",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -590,7 +545,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -602,7 +556,6 @@
     "description" : "prefix log message with this string",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -615,29 +568,6 @@
     "section" : "log",
     "type" : "string"
   },
-  "log.process" : {
-    "category" : "option",
-    "default" : true,
-    "deprecatedIn" : null,
-    "description" : "show process identifier (pid) in log message",
-    "dynamic" : false,
-    "enterpriseOnly" : false,
-    "experimental" : false,
-    "hidden" : true,
-    "introducedIn" : [
-      "v3.8.0"
-    ],
-    "obsolete" : false,
-    "os" : [
-      "linux",
-      "macos",
-      "windows"
-    ],
-    "required" : false,
-    "requiresValue" : false,
-    "section" : "log",
-    "type" : "boolean"
-  },
   "log.request-parameters" : {
     "category" : "option",
     "default" : true,
@@ -645,7 +575,6 @@
     "description" : "include full URLs and HTTP request parameters in trace logs",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -654,7 +583,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -666,7 +594,6 @@
     "description" : "log server role",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -675,7 +602,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -687,7 +613,6 @@
     "description" : "shorten filenames in log output (use with --log.line-number)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -696,33 +621,9 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
-  },
-  "log.structured-param" : {
-    "category" : "option",
-    "default" : [
-    ],
-    "deprecatedIn" : null,
-    "description" : "toggle usage of log category parameter in structured log messages",
-    "dynamic" : false,
-    "enterpriseOnly" : false,
-    "experimental" : false,
-    "hidden" : false,
-    "introducedIn" : [
-      "v3.10.0"
-    ],
-    "obsolete" : false,
-    "os" : [
-      "linux",
-      "macos",
-      "windows"
-    ],
-    "requiresValue" : true,
-    "section" : "log",
-    "type" : "string..."
   },
   "log.thread" : {
     "category" : "option",
@@ -731,7 +632,6 @@
     "description" : "show thread identifier in log message",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -740,7 +640,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -752,7 +651,6 @@
     "description" : "show thread name in log message",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -761,7 +659,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -773,7 +670,6 @@
     "description" : "time format to use in logs",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : [
       "v3.5.0"
@@ -789,29 +685,6 @@
     "type" : "string",
     "values" : "Possible values: \"local-datestring\", \"timestamp\", \"timestamp-micros\", \"timestamp-millis\", \"uptime\", \"uptime-micros\", \"uptime-millis\", \"utc-datestring\", \"utc-datestring-millis\""
   },
-  "log.use-json-format" : {
-    "category" : "option",
-    "default" : false,
-    "deprecatedIn" : null,
-    "description" : "use json output format",
-    "dynamic" : false,
-    "enterpriseOnly" : false,
-    "experimental" : false,
-    "hidden" : false,
-    "introducedIn" : [
-      "v3.8.0"
-    ],
-    "obsolete" : false,
-    "os" : [
-      "linux",
-      "macos",
-      "windows"
-    ],
-    "required" : false,
-    "requiresValue" : false,
-    "section" : "log",
-    "type" : "boolean"
-  },
   "log.use-local-time" : {
     "category" : "option",
     "default" : false,
@@ -821,7 +694,6 @@
     "description" : "use local timezone instead of UTC",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -830,7 +702,6 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
@@ -844,7 +715,6 @@
     "description" : "use microtime instead",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -853,26 +723,19 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "log",
     "type" : "boolean"
   },
   "max-wait-for-lock" : {
-    "base" : 1,
     "category" : "option",
     "default" : 60,
     "deprecatedIn" : null,
     "description" : "maximum time to wait in seconds to acquire a lock on all necessary resources (create operation)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 1.7976931348623157e+308,
-    "minInclusive" : true,
-    "minValue" : 2.2250738585072014e-308,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -884,20 +747,14 @@
     "type" : "double"
   },
   "max-wait-for-restart" : {
-    "base" : 1,
     "category" : "option",
     "default" : 0,
     "deprecatedIn" : null,
     "description" : "maximum time to wait in seconds for the server to restart after a restore operation before reporting an error; if zero, arangobackup will not wait to check that the server restarts and will simply return the result of the restore request (restore operation)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 1.7976931348623157e+308,
-    "minInclusive" : true,
-    "minValue" : 2.2250738585072014e-308,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -915,7 +772,6 @@
     "description" : "operation to perform (may be specified as positional argument without '--operation')",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
     "obsolete" : false,
@@ -930,20 +786,14 @@
     "values" : "Possible values: \"create\", \"delete\", \"download\", \"list\", \"restore\", \"upload\""
   },
   "random.generator" : {
-    "base" : 1,
     "category" : "option",
     "default" : 1,
     "deprecatedIn" : null,
     "description" : "random number generator to use (1 = MERSENNE, 2 = RANDOM, 3 = URANDOM, 4 = COMBINED (not for Windows), 5 = WinCrypt (Windows only)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 4294967295,
-    "minInclusive" : true,
-    "minValue" : 0,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -962,7 +812,6 @@
     "description" : "filename of the Rclone configuration file used forfile transfer (upload/download operation)",
     "dynamic" : false,
     "enterpriseOnly" : true,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -982,7 +831,6 @@
     "description" : "remote Rclone path of directory used to store or receive backups (upload/download operation)",
     "dynamic" : false,
     "enterpriseOnly" : true,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1002,7 +850,6 @@
     "description" : "require authentication credentials when connecting (does not affect the server-side authentication settings)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1011,26 +858,19 @@
       "macos",
       "windows"
     ],
-    "required" : false,
     "requiresValue" : false,
     "section" : "server",
     "type" : "boolean"
   },
   "server.connection-timeout" : {
-    "base" : 1,
     "category" : "option",
     "default" : 5,
     "deprecatedIn" : null,
     "description" : "connection timeout in seconds",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 1.7976931348623157e+308,
-    "minInclusive" : true,
-    "minValue" : 2.2250738585072014e-308,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -1048,7 +888,6 @@
     "description" : "database name to use when connecting",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1063,14 +902,11 @@
   },
   "server.endpoint" : {
     "category" : "option",
-    "default" : [
-      "http+tcp://127.0.0.1:8529"
-    ],
+    "default" : "http+tcp://127.0.0.1:8529",
     "deprecatedIn" : null,
-    "description" : "endpoint to connect to. Use 'none' to start without a server. Use http+ssl:// as schema to connect to an SSL-secured server endpoint, otherwise http+tcp:// or unix://",
+    "description" : "endpoint to connect to. Use 'none' to start without a server. Use http+ssl:// or vst+ssl:// as schema to connect to an SSL-secured server endpoint, otherwise http+tcp://, vst+tcp:// or unix://",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1081,23 +917,38 @@
     ],
     "requiresValue" : true,
     "section" : "server",
-    "type" : "string..."
+    "type" : "string"
+  },
+  "server.force-json" : {
+    "category" : "option",
+    "default" : false,
+    "deprecatedIn" : null,
+    "description" : "force to not use VelocyPack for easier debugging",
+    "dynamic" : false,
+    "enterpriseOnly" : false,
+    "hidden" : true,
+    "introducedIn" : [
+      "v3.6.0"
+    ],
+    "obsolete" : false,
+    "os" : [
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "requiresValue" : false,
+    "section" : "server",
+    "type" : "boolean"
   },
   "server.max-packet-size" : {
-    "base" : 1,
     "category" : "option",
     "default" : 1073741824,
     "deprecatedIn" : null,
     "description" : "maximum packet size (in bytes) for client/server communication",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : true,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 18446744073709551615,
-    "minInclusive" : true,
-    "minValue" : 0,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -1115,7 +966,6 @@
     "description" : "password to use when connecting. If not specified and authentication is required, the user will be prompted for a password",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1129,20 +979,14 @@
     "type" : "string"
   },
   "server.request-timeout" : {
-    "base" : 1,
     "category" : "option",
     "default" : 1200,
     "deprecatedIn" : null,
     "description" : "request timeout in seconds",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 1.7976931348623157e+308,
-    "minInclusive" : true,
-    "minValue" : 2.2250738585072014e-308,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -1160,7 +1004,6 @@
     "description" : "username to use when connecting",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1174,20 +1017,14 @@
     "type" : "string"
   },
   "ssl.protocol" : {
-    "base" : 1,
     "category" : "option",
     "default" : 5,
     "deprecatedIn" : null,
     "description" : "ssl protocol (1 = SSLv2 (unsupported), 2 = SSLv2 or SSLv3 (negotiated), 3 = SSLv3, 4 = TLSv1, 5 = TLSv1.2, 6 = TLSv1.3, 9 = generic TLS)",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
-    "maxInclusive" : true,
-    "maxValue" : 18446744073709551615,
-    "minInclusive" : true,
-    "minValue" : 0,
     "obsolete" : false,
     "os" : [
       "linux",
@@ -1205,7 +1042,6 @@
     "description" : "returns the status of a transfer process (upload/download operation)",
     "dynamic" : false,
     "enterpriseOnly" : true,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
     "obsolete" : false,
@@ -1224,30 +1060,8 @@
     "description" : "reports the version and exits",
     "dynamic" : false,
     "enterpriseOnly" : false,
-    "experimental" : false,
     "hidden" : false,
     "introducedIn" : null,
-    "obsolete" : false,
-    "os" : [
-      "linux",
-      "macos",
-      "windows"
-    ],
-    "requiresValue" : false,
-    "section" : "",
-    "type" : "boolean"
-  },
-  "version-json" : {
-    "category" : "command",
-    "deprecatedIn" : null,
-    "description" : "reports the version as JSON and exits",
-    "dynamic" : false,
-    "enterpriseOnly" : false,
-    "experimental" : false,
-    "hidden" : false,
-    "introducedIn" : [
-      "v3.9.0"
-    ],
     "obsolete" : false,
     "os" : [
       "linux",

@@ -7,13 +7,13 @@ arangosh&gt; analyzers.save(<span class="hljs-string">&quot;trigram&quot;</span>
     <span class="hljs-string">&quot;min&quot;</span> : <span class="hljs-number">3</span>, 
     <span class="hljs-string">&quot;max&quot;</span> : <span class="hljs-number">3</span>, 
     <span class="hljs-string">&quot;preserveOriginal&quot;</span> : <span class="hljs-literal">false</span>, 
-    <span class="hljs-string">&quot;streamType&quot;</span> : <span class="hljs-string">&quot;utf8&quot;</span>, 
     <span class="hljs-string">&quot;startMarker&quot;</span> : <span class="hljs-string">&quot;&quot;</span>, 
-    <span class="hljs-string">&quot;endMarker&quot;</span> : <span class="hljs-string">&quot;&quot;</span> 
+    <span class="hljs-string">&quot;endMarker&quot;</span> : <span class="hljs-string">&quot;&quot;</span>, 
+    <span class="hljs-string">&quot;streamType&quot;</span> : <span class="hljs-string">&quot;utf8&quot;</span> 
   }, 
   <span class="hljs-string">&quot;features&quot;</span> : [ 
-    <span class="hljs-string">&quot;frequency&quot;</span>, 
     <span class="hljs-string">&quot;position&quot;</span>, 
-    <span class="hljs-string">&quot;norm&quot;</span> 
+    <span class="hljs-string">&quot;norm&quot;</span>, 
+    <span class="hljs-string">&quot;frequency&quot;</span> 
   ] 
 }

@@ -5,14 +5,13 @@ EOF
 HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 content-type: application/json
 connection: Keep-Alive
-content-length: <span class="hljs-number">45</span>
-location: <span class="hljs-regexp">/_db/</span>_system/_api/collection/testCollection/responsibleShard
+content-length: <span class="hljs-number">47</span>
+location: <span class="hljs-regexp">/_api/</span>collection/testCollection/responsibleShard
 server: ArangoDB
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 { 
   <span class="hljs-string">&quot;error&quot;</span> : <span class="hljs-literal">false</span>, 
   <span class="hljs-string">&quot;code&quot;</span> : <span class="hljs-number">200</span>, 
-  <span class="hljs-string">&quot;shardId&quot;</span> : <span class="hljs-string">&quot;s10047&quot;</span> 
+  <span class="hljs-string">&quot;shardId&quot;</span> : <span class="hljs-string">&quot;s2010051&quot;</span> 
 }

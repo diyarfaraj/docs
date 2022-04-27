@@ -39,7 +39,3 @@ View Functions:
   _createView(&lt;name&gt;, &lt;type&gt;,           creates a <span class="hljs-keyword">new</span> view                
               &lt;properties&gt;)                                               
   _dropView(&lt;name&gt;)                     <span class="hljs-keyword">delete</span> a view                     
-                                                                          
-License Functions:                                                        
-  _getLicense()                         get license information           
-  _setLicense(&lt;license-string&gt;)         set license string                

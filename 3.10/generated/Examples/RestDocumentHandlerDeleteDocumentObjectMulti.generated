@@ -14,18 +14,17 @@ content-type: application/json
 connection: Keep-Alive
 content-length: <span class="hljs-number">107</span>
 server: ArangoDB
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 [ 
   { 
     <span class="hljs-string">&quot;_id&quot;</span> : <span class="hljs-string">&quot;products/1&quot;</span>, 
     <span class="hljs-string">&quot;_key&quot;</span> : <span class="hljs-string">&quot;1&quot;</span>, 
-    <span class="hljs-string">&quot;_rev&quot;</span> : <span class="hljs-string">&quot;_eEavZ0O--_&quot;</span> 
+    <span class="hljs-string">&quot;_rev&quot;</span> : <span class="hljs-string">&quot;_eEx6zBK--A&quot;</span> 
   }, 
   { 
     <span class="hljs-string">&quot;_id&quot;</span> : <span class="hljs-string">&quot;products/2&quot;</span>, 
     <span class="hljs-string">&quot;_key&quot;</span> : <span class="hljs-string">&quot;2&quot;</span>, 
-    <span class="hljs-string">&quot;_rev&quot;</span> : <span class="hljs-string">&quot;_eEavZ0O--A&quot;</span> 
+    <span class="hljs-string">&quot;_rev&quot;</span> : <span class="hljs-string">&quot;_eEx6zBK--C&quot;</span> 
   } 
 ]

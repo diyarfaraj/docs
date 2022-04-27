@@ -7,8 +7,8 @@ arangosh&gt; analyzers.save(<span class="hljs-string">&quot;csv&quot;</span>, <s
     <span class="hljs-string">&quot;delimiter&quot;</span> : <span class="hljs-string">&quot;,&quot;</span> 
   }, 
   <span class="hljs-string">&quot;features&quot;</span> : [ 
-    <span class="hljs-string">&quot;frequency&quot;</span>, 
     <span class="hljs-string">&quot;position&quot;</span>, 
-    <span class="hljs-string">&quot;norm&quot;</span> 
+    <span class="hljs-string">&quot;norm&quot;</span>, 
+    <span class="hljs-string">&quot;frequency&quot;</span> 
   ] 
 }

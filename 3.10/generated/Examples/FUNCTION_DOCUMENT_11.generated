@@ -1,5 +1,5 @@
 @Q:
-  RETURN DOCUMENT( CONCAT(<span class="hljs-string">&quot;persons/&quot;</span>, @key) )
+   RETURN DOCUMENT( CONCAT(<span class="hljs-string">&quot;persons/&quot;</span>, @key) )
 @B
 {
   <span class="hljs-string">&quot;key&quot;</span>: <span class="hljs-string">&quot;bob&quot;</span>
@@ -9,7 +9,7 @@
   {
     <span class="hljs-string">&quot;_key&quot;</span>: <span class="hljs-string">&quot;bob&quot;</span>,
     <span class="hljs-string">&quot;_id&quot;</span>: <span class="hljs-string">&quot;persons/bob&quot;</span>,
-    <span class="hljs-string">&quot;_rev&quot;</span>: <span class="hljs-string">&quot;_eEauuQi--_&quot;</span>,
+    <span class="hljs-string">&quot;_rev&quot;</span>: <span class="hljs-string">&quot;_eEx6Pxy--E&quot;</span>,
     <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Bob&quot;</span>
   }
 ]

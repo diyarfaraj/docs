@@ -18,9 +18,8 @@ EOF
 HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 content-type: application/json
 connection: Keep-Alive
-content-length: <span class="hljs-number">3675</span>
+content-length: <span class="hljs-number">3090</span>
 server: ArangoDB
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 { 
@@ -45,15 +44,11 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;outVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">0</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;p&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">true</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">true</span> 
           }, 
           <span class="hljs-string">&quot;projections&quot;</span> : [ ], 
           <span class="hljs-string">&quot;count&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;producesResult&quot;</span> : <span class="hljs-literal">true</span>, 
-          <span class="hljs-string">&quot;readOwnWrites&quot;</span> : <span class="hljs-literal">false</span>, 
-          <span class="hljs-string">&quot;useCache&quot;</span> : <span class="hljs-literal">false</span>, 
-          <span class="hljs-string">&quot;maxProjections&quot;</span> : <span class="hljs-number">5</span>, 
           <span class="hljs-string">&quot;database&quot;</span> : <span class="hljs-string">&quot;_system&quot;</span>, 
           <span class="hljs-string">&quot;collection&quot;</span> : <span class="hljs-string">&quot;products&quot;</span>, 
           <span class="hljs-string">&quot;satellite&quot;</span> : <span class="hljs-literal">false</span>, 
@@ -63,23 +58,20 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;indexCoversProjections&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;indexes&quot;</span> : [ 
             { 
-              <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;68010&quot;</span>, 
-              <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;persistent&quot;</span>, 
-              <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;idx_1731197649362616321&quot;</span>, 
+              <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;71864&quot;</span>, 
+              <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;skiplist&quot;</span>, 
+              <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;idx_1731299587411410944&quot;</span>, 
               <span class="hljs-string">&quot;fields&quot;</span> : [ 
                 <span class="hljs-string">&quot;id&quot;</span> 
               ], 
               <span class="hljs-string">&quot;selectivityEstimate&quot;</span> : <span class="hljs-number">1</span>, 
               <span class="hljs-string">&quot;unique&quot;</span> : <span class="hljs-literal">false</span>, 
               <span class="hljs-string">&quot;sparse&quot;</span> : <span class="hljs-literal">false</span>, 
-              <span class="hljs-string">&quot;deduplicate&quot;</span> : <span class="hljs-literal">true</span>, 
-              <span class="hljs-string">&quot;estimates&quot;</span> : <span class="hljs-literal">true</span>, 
-              <span class="hljs-string">&quot;cacheEnabled&quot;</span> : <span class="hljs-literal">false</span> 
+              <span class="hljs-string">&quot;deduplicate&quot;</span> : <span class="hljs-literal">true</span> 
             } 
           ], 
           <span class="hljs-string">&quot;condition&quot;</span> : { 
           }, 
-          <span class="hljs-string">&quot;allCoveredByOneIndex&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;sorted&quot;</span> : <span class="hljs-literal">true</span>, 
           <span class="hljs-string">&quot;ascending&quot;</span> : <span class="hljs-literal">true</span>, 
           <span class="hljs-string">&quot;reverse&quot;</span> : <span class="hljs-literal">false</span>, 
@@ -110,7 +102,6 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;outVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">1</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;a&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
           }, 
           <span class="hljs-string">&quot;canThrow&quot;</span> : <span class="hljs-literal">false</span>, 
@@ -147,7 +138,6 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;outVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">4</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;3&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
           }, 
           <span class="hljs-string">&quot;canThrow&quot;</span> : <span class="hljs-literal">false</span>, 
@@ -164,7 +154,6 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;inVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">4</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;3&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
           } 
         }, 
@@ -192,7 +181,6 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;outVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">2</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;name&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
           }, 
           <span class="hljs-string">&quot;canThrow&quot;</span> : <span class="hljs-literal">false</span>, 
@@ -222,7 +210,6 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;outVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">6</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;5&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
           }, 
           <span class="hljs-string">&quot;canThrow&quot;</span> : <span class="hljs-literal">false</span>, 
@@ -251,7 +238,6 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;inVariable&quot;</span> : { 
             <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">2</span>, 
             <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;name&quot;</span>, 
-            <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
             <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
           }, 
           <span class="hljs-string">&quot;count&quot;</span> : <span class="hljs-literal">true</span> 
@@ -270,31 +256,26 @@ x-content-type-options: nosniff
         { 
           <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">6</span>, 
           <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;5&quot;</span>, 
-          <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         { 
           <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">4</span>, 
           <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;3&quot;</span>, 
-          <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         { 
           <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">2</span>, 
           <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;name&quot;</span>, 
-          <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         { 
           <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">1</span>, 
           <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;a&quot;</span>, 
-          <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">false</span>, 
           <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         { 
           <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-number">0</span>, 
           <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;p&quot;</span>, 
-          <span class="hljs-string">&quot;isFullDocumentFromCollection&quot;</span> : <span class="hljs-literal">true</span>, 
           <span class="hljs-string">&quot;isDataFromCollection&quot;</span> : <span class="hljs-literal">true</span> 
         } 
       ], 
@@ -305,8 +286,8 @@ x-content-type-options: nosniff
   ], 
   <span class="hljs-string">&quot;warnings&quot;</span> : [ ], 
   <span class="hljs-string">&quot;stats&quot;</span> : { 
-    <span class="hljs-string">&quot;rulesExecuted&quot;</span> : <span class="hljs-number">4</span>, 
-    <span class="hljs-string">&quot;rulesSkipped&quot;</span> : <span class="hljs-number">36</span>, 
+    <span class="hljs-string">&quot;rulesExecuted&quot;</span> : <span class="hljs-number">3</span>, 
+    <span class="hljs-string">&quot;rulesSkipped&quot;</span> : <span class="hljs-number">38</span>, 
     <span class="hljs-string">&quot;plansCreated&quot;</span> : <span class="hljs-number">1</span> 
   }, 
   <span class="hljs-string">&quot;error&quot;</span> : <span class="hljs-literal">false</span>, 

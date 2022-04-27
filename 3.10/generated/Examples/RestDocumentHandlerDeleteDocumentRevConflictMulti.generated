@@ -14,21 +14,20 @@ EOF
 HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">202</span> Accepted
 content-type: application/json
 connection: Keep-Alive
-content-length: <span class="hljs-number">167</span>
+content-length: <span class="hljs-number">115</span>
 server: ArangoDB
 x-arango-error-codes: {<span class="hljs-string">&quot;1200&quot;</span>:<span class="hljs-number">2</span>}
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 [ 
   { 
     <span class="hljs-string">&quot;error&quot;</span> : <span class="hljs-literal">true</span>, 
     <span class="hljs-string">&quot;errorNum&quot;</span> : <span class="hljs-number">1200</span>, 
-    <span class="hljs-string">&quot;errorMessage&quot;</span> : <span class="hljs-string">&quot;conflict, _rev values do not match&quot;</span> 
+    <span class="hljs-string">&quot;errorMessage&quot;</span> : <span class="hljs-string">&quot;conflict&quot;</span> 
   }, 
   { 
     <span class="hljs-string">&quot;error&quot;</span> : <span class="hljs-literal">true</span>, 
     <span class="hljs-string">&quot;errorNum&quot;</span> : <span class="hljs-number">1200</span>, 
-    <span class="hljs-string">&quot;errorMessage&quot;</span> : <span class="hljs-string">&quot;conflict, _rev values do not match&quot;</span> 
+    <span class="hljs-string">&quot;errorMessage&quot;</span> : <span class="hljs-string">&quot;conflict&quot;</span> 
   } 
 ]

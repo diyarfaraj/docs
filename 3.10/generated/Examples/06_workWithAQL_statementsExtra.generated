@@ -7,22 +7,18 @@ arangosh&gt; db._query(<span class="hljs-string">`
 ........&gt;  {<span class="hljs-attr">fullCount</span>: <span class="hljs-literal">true</span>}
 ........&gt; ).getExtra();
 { 
-  <span class="hljs-string">&quot;warnings&quot;</span> : [ ], 
   <span class="hljs-string">&quot;stats&quot;</span> : { 
     <span class="hljs-string">&quot;writesExecuted&quot;</span> : <span class="hljs-number">100</span>, 
     <span class="hljs-string">&quot;writesIgnored&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;scannedFull&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;scannedIndex&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cursorsCreated&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cursorsRearmed&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cacheHits&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cacheMisses&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;filtered&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;httpRequests&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;fullCount&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.001981135457754135</span>, 
-    <span class="hljs-string">&quot;peakMemoryUsage&quot;</span> : <span class="hljs-number">32768</span> 
-  } 
+    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.0009477120001974981</span>, 
+    <span class="hljs-string">&quot;peakMemoryUsage&quot;</span> : <span class="hljs-number">44304</span> 
+  }, 
+  <span class="hljs-string">&quot;warnings&quot;</span> : [ ] 
 }
 arangosh&gt; db._query({
 ........&gt;  <span class="hljs-string">&quot;query&quot;</span>: <span class="hljs-string">`FOR i IN 200..@count INSERT
@@ -32,20 +28,16 @@ arangosh&gt; db._query({
 ........&gt;  <span class="hljs-string">&quot;options&quot;</span>: { <span class="hljs-attr">fullCount</span>: <span class="hljs-literal">true</span>}
 ........&gt; }).getExtra();
 { 
-  <span class="hljs-string">&quot;warnings&quot;</span> : [ ], 
   <span class="hljs-string">&quot;stats&quot;</span> : { 
     <span class="hljs-string">&quot;writesExecuted&quot;</span> : <span class="hljs-number">101</span>, 
     <span class="hljs-string">&quot;writesIgnored&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;scannedFull&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;scannedIndex&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cursorsCreated&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cursorsRearmed&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cacheHits&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;cacheMisses&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;filtered&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;httpRequests&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;fullCount&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.001781008206307888</span>, 
-    <span class="hljs-string">&quot;peakMemoryUsage&quot;</span> : <span class="hljs-number">32768</span> 
-  } 
+    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.0009059809999598656</span>, 
+    <span class="hljs-string">&quot;peakMemoryUsage&quot;</span> : <span class="hljs-number">44467</span> 
+  }, 
+  <span class="hljs-string">&quot;warnings&quot;</span> : [ ] 
 }

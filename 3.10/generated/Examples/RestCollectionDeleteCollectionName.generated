@@ -5,11 +5,10 @@ content-type: application/json
 connection: Keep-Alive
 content-length: <span class="hljs-number">39</span>
 server: ArangoDB
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 { 
   <span class="hljs-string">&quot;error&quot;</span> : <span class="hljs-literal">false</span>, 
   <span class="hljs-string">&quot;code&quot;</span> : <span class="hljs-number">200</span>, 
-  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;66972&quot;</span> 
+  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;70776&quot;</span> 
 }

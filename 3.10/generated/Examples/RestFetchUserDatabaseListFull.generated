@@ -3,9 +3,8 @@
 HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 content-type: application/json
 connection: Keep-Alive
-content-length: <span class="hljs-number">457</span>
+content-length: <span class="hljs-number">504</span>
 server: ArangoDB
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 { 
@@ -16,19 +15,21 @@ x-content-type-options: nosniff
       <span class="hljs-string">&quot;permission&quot;</span> : <span class="hljs-string">&quot;rw&quot;</span>, 
       <span class="hljs-string">&quot;collections&quot;</span> : { 
         <span class="hljs-string">&quot;animals&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
-        <span class="hljs-string">&quot;_statistics&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;demo&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
-        <span class="hljs-string">&quot;_users&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_fishbowl&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_modules&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_frontend&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_appbundles&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_statistics&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_graphs&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_statistics15&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_apps&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
+        <span class="hljs-string">&quot;_users&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_statisticsRaw&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_analyzers&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_aqlfunctions&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_queues&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;_jobs&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
-        <span class="hljs-string">&quot;_apps&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
-        <span class="hljs-string">&quot;_appbundles&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
-        <span class="hljs-string">&quot;_frontend&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span>, 
         <span class="hljs-string">&quot;*&quot;</span> : <span class="hljs-string">&quot;undefined&quot;</span> 
       } 
     }, 

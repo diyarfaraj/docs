@@ -8,7 +8,6 @@ connection: Keep-Alive
 content-length: <span class="hljs-number">127</span>
 server: ArangoDB
 x-arango-error-codes: {<span class="hljs-string">&quot;1221&quot;</span>:<span class="hljs-number">1</span>}
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 [ 
@@ -20,6 +19,6 @@ x-content-type-options: nosniff
   { 
     <span class="hljs-string">&quot;_id&quot;</span> : <span class="hljs-string">&quot;products/abc&quot;</span>, 
     <span class="hljs-string">&quot;_key&quot;</span> : <span class="hljs-string">&quot;abc&quot;</span>, 
-    <span class="hljs-string">&quot;_rev&quot;</span> : <span class="hljs-string">&quot;_eEavZ2u--_&quot;</span> 
+    <span class="hljs-string">&quot;_rev&quot;</span> : <span class="hljs-string">&quot;_eEx6zEK--A&quot;</span> 
   } 
 ]

@@ -11,7 +11,6 @@ connection: Keep-Alive
 content-length: <span class="hljs-number">135</span>
 server: ArangoDB
 x-arango-error-codes: {<span class="hljs-string">&quot;1202&quot;</span>:<span class="hljs-number">2</span>}
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 [ 

@@ -18,7 +18,6 @@ connection: Keep-Alive
 content-length: 598
 server: ArangoDB
 x-arango-errors: 2
-x-arango-queue-time-seconds: 0.000000
 x-content-type-options: nosniff
 
 --SomeBoundaryValue

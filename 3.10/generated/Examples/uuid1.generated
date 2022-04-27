@@ -1,0 +1,10 @@
+@Q:
+  FOR i IN <span class="hljs-number">1.</span><span class="hljs-number">.3</span>
+    RETURN UUID()
+
+@R
+[
+  <span class="hljs-string">&quot;5de50486-d358-45fe-8ddd-d3126229dd7e&quot;</span>,
+  <span class="hljs-string">&quot;9bc493d9-bec3-4083-bc67-f0bd0e0d0710&quot;</span>,
+  <span class="hljs-string">&quot;b45acbe7-cae3-412a-ae46-7400ea668eda&quot;</span>
+]

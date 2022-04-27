@@ -4,9 +4,8 @@ HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> O
 content-type: application/json
 connection: Keep-Alive
 content-length: <span class="hljs-number">40</span>
-location: <span class="hljs-regexp">/_db/</span>_system/_api/collection/products/loadIndexesIntoMemory
+location: <span class="hljs-regexp">/_api/</span>collection/products/loadIndexesIntoMemory
 server: ArangoDB
-x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 { 
