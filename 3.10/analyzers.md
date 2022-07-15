@@ -755,9 +755,9 @@ Otherwise the position is set to the respective array index, 0 for `"A"`,
     |   "FOR d IN SPLIT(@param, '-') RETURN d"
       }, ["frequency", "norm", "position"]);
       var coll = db._create("coll");
+      var doc = db.coll.save({ text: "A-B-C-D" });
     | var view = db._createView("view", "arangosearch",
         { links: { coll: { analyzers: [ "collapsed", "uncollapsed" ], includeAllFields: true }}});
-      var doc = db.coll.save({ text: "A-B-C-D" });
     ~ db._query("FOR d IN view OPTIONS { waitForSync: true } LIMIT 1 RETURN true");
       db._query("FOR d IN view SEARCH PHRASE(d.text, {TERM: 'B'}, 1, {TERM: 'D'}, 'uncollapsed') RETURN d");
       db._query("FOR d IN view SEARCH PHRASE(d.text, {TERM: 'B'}, -1, {TERM: 'D'}, 'uncollapsed') RETURN d");
@@ -1008,31 +1008,24 @@ The *properties* allowed for this Analyzer are an object with the following attr
 Create and use a `classification` Analyzer with a stored "cooking" classifier
 to classify items.
 
-```js
-var analyzers = require("@arangodb/analyzers");
-var classifier_single = analyzers.save("classifier_single", "classification", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin" }, ["frequency", "norm", "position"]);
-var classifier_top_two = analyzers.save("classifier_double", "classification", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
-db._query(`LET str = "Which baking dish is best to bake a banana bread ?"
-    RETURN {
-      "all": TOKENS(str, "classifier_single"),
-      "double": TOKENS(str, "classifier_double")
-    }
-  `);
-```
-
-```json
-[
-  {
-    "all" : [
-      "__label__baking"
-    ],
-    "double" : [
-      "__label__baking",
-      "__label__bananas"
-    ]
-  }
-]
-```
+{% arangoshexample examplevar="examplevar" script="script" result="result" %}
+    @startDocuBlockInline analyzerSegmentationBreak
+    @EXAMPLE_ARANGOSH_OUTPUT{analyzerSegmentationBreak}
+      var analyzers = require("@arangodb/analyzers");
+      var classifier_single = analyzers.save("classifier_single", "classification", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin" }, ["frequency", "norm", "position"]);
+      var classifier_top_two = analyzers.save("classifier_double", "classification", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
+      |db._query(`LET str = "Which baking dish is best to bake a banana bread ?"
+      |    RETURN {
+      |      "all": TOKENS(str, "classifier_single"),
+      |      "double": TOKENS(str, "classifier_double")
+      |    }
+        `);
+    ~ analyzers.remove(classifier_single.name);
+    ~ analyzers.remove(classifier_top_two.name);
+    @END_EXAMPLE_ARANGOSH_OUTPUT
+    @endDocuBlock analyzerSegmentationBreak
+{% endarangoshexample %}
+{% include arangoshexample.html id=examplevar script=script result=result %}
 
 ### `nearest_neighbors`
 
@@ -1065,34 +1058,24 @@ The *properties* allowed for this Analyzer are an object with the following attr
 Create and use a `nearest_neighbors` Analyzer with a stored "cooking" classifier
 to find similar terms.
 
-```js
-var analyzers = require("@arangodb/analyzers");
-var nn_single = analyzers.save("nn_single", "nearest_neighbors", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin" }, ["frequency", "norm", "position"]);
-var nn_top_two = analyzers.save("nn_double", "nearest_neighbors", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
-db._query(`LET str = "salt, oil"
-    RETURN {
-      "all": TOKENS(str, "nn_single"),
-      "double": TOKENS(str, "nn_double")
-    }
-  `);
-```
-
-```json
-[
-  {
-    "all" : [
-      "pepper",
-      "olive"
-    ],
-    "double" : [
-      "pepper",
-      "table",
-      "olive",
-      "avocado"
-    ]
-  }
-]
-```
+{% arangoshexample examplevar="examplevar" script="script" result="result" %}
+    @startDocuBlockInline analyzerSegmentationBreak
+    @EXAMPLE_ARANGOSH_OUTPUT{analyzerSegmentationBreak}
+      var analyzers = require("@arangodb/analyzers");
+      var nn_single = analyzers.save("nn_single", "nearest_neighbors", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin" }, ["frequency", "norm", "position"]);
+      var nn_top_two = analyzers.save("nn_double", "nearest_neighbors", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
+      |db._query(`LET str = "salt, oil"
+      |    RETURN {
+      |      "all": TOKENS(str, "nn_single"),
+      |      "double": TOKENS(str, "nn_double")
+      |    }
+        `);
+    ~ analyzers.remove(nn_single.name);
+    ~ analyzers.remove(nn_top_two.name);
+    @END_EXAMPLE_ARANGOSH_OUTPUT
+    @endDocuBlock analyzerSegmentationBreak
+{% endarangoshexample %}
+{% include arangoshexample.html id=examplevar script=script result=result %}
 
 ### `geojson`
 
@@ -1185,7 +1168,7 @@ The Analyzer can be used for two different coordinate representations:
   The attributes cannot be at the top level of the document, but must be nested
   like in the example, so that the Analyzer can be defined for the field
   `location` with the Analyzer properties
-  `{ "latitude": ["lat"], "longitude": ["lng"] }`.
+  `{ "latitude": ["lat"], "longitude": ["lon"] }`.
 
 The *properties* allowed for this Analyzer are an object with the following
 attributes:
