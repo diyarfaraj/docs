@@ -148,13 +148,15 @@ AQL integration
 ---------------
 
 When the graph processing subsystem finishes executing an algorithm, the
-results can either be written back into documents or kept in memory only.
-If the data is persisted, then you can query the documents normally to get
-access to the results.
+results can either be written back into documents (using `store = true` parameter)
+or kept in memory only (using `store = false`). If the data is persisted, 
+then you can query the documents normally to get access to the results.
 
 If you do not want to store results, then they are only held temporarily,
-until you call the `cancel()` method. The in-memory results can be accessed
-via the `PREGEL_RESULT()` AQL function.
+until you call the `cancel()` method OR its time to live (customizable via 
+the parameter `ttl`) is exceeded. The in-memory results can be accessed via the 
+`PREGEL_RESULT()` AQL function. If the results are stored into documents, they 
+are not queryable by `PREGEL_RESULT()`.
 
 The result field names depend on the algorithm in both cases.
 
@@ -204,6 +206,10 @@ There are a number of general parameters which apply to almost all algorithms:
   larger datasets.
 - `shardKeyAttribute` (string): shard key that edge collections are sharded
   after (default: `"vertex"`)
+- `ttl` (number): This parameter is only relevant if `store = false`. 
+  `ttl` - time to live - is the time in seconds for which the pregel run 
+  is kept in memory after it finished with states `done`, `in error` or `fatal error`
+  (default: 600).
 
 Available Algorithms
 --------------------
