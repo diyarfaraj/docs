@@ -1012,8 +1012,8 @@ to classify items.
     @startDocuBlockInline analyzerSegmentationBreak
     @EXAMPLE_ARANGOSH_OUTPUT{analyzerSegmentationBreak}
       var analyzers = require("@arangodb/analyzers");
-      var classifier_single = analyzers.save("classifier_single", "classification", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin" }, ["frequency", "norm", "position"]);
-      var classifier_top_two = analyzers.save("classifier_double", "classification", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
+      var classifier_single = analyzers.save("classifier_single", "classification", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin" }, ["frequency", "norm", "position"]);
+      var classifier_top_two = analyzers.save("classifier_double", "classification", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
       |db._query(`LET str = "Which baking dish is best to bake a banana bread ?"
       |    RETURN {
       |      "all": TOKENS(str, "classifier_single"),
@@ -1062,8 +1062,8 @@ to find similar terms.
     @startDocuBlockInline analyzerSegmentationBreak
     @EXAMPLE_ARANGOSH_OUTPUT{analyzerSegmentationBreak}
       var analyzers = require("@arangodb/analyzers");
-      var nn_single = analyzers.save("nn_single", "nearest_neighbors", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin" }, ["frequency", "norm", "position"]);
-      var nn_top_two = analyzers.save("nn_double", "nearest_neighbors", { "model_location": "/path_to_local_fasttext_model_directory/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
+      var nn_single = analyzers.save("nn_single", "nearest_neighbors", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin" }, ["frequency", "norm", "position"]);
+      var nn_top_two = analyzers.save("nn_double", "nearest_neighbors", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
       |db._query(`LET str = "salt, oil"
       |    RETURN {
       |      "all": TOKENS(str, "nn_single"),
