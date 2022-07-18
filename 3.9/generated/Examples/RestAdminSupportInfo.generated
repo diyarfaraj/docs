@@ -3,7 +3,7 @@
 HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 content-type: application/json
 connection: Keep-Alive
-content-length: <span class="hljs-number">1089</span>
+content-length: <span class="hljs-number">1087</span>
 server: ArangoDB
 x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
@@ -30,28 +30,28 @@ x-content-type-options: nosniff
       <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
     }, 
     <span class="hljs-string">&quot;processStats&quot;</span> : { 
-      <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">12.373034477233887</span>, 
+      <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">17.482462882995605</span>, 
       <span class="hljs-string">&quot;numberOfThreads&quot;</span> : <span class="hljs-number">83</span>, 
-      <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">1591607296</span>, 
-      <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">326156288</span> 
+      <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">1589510144</span>, 
+      <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">323723264</span> 
     }, 
     <span class="hljs-string">&quot;cpuStats&quot;</span> : { 
-      <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">15.720524017467248</span>, 
-      <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">4.8034934497816595</span>, 
-      <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">77.29257641921397</span>, 
-      <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">1.3100436681222707</span> 
+      <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">11.57556270096463</span>, 
+      <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.572347266881029</span>, 
+      <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">84.88745980707395</span>, 
+      <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.9646302250803859</span> 
     }, 
     <span class="hljs-string">&quot;engineStats&quot;</span> : { 
       <span class="hljs-string">&quot;cache.limit&quot;</span> : <span class="hljs-number">16341337088</span>, 
       <span class="hljs-string">&quot;cache.allocated&quot;</span> : <span class="hljs-number">1355000</span>, 
-      <span class="hljs-string">&quot;rocksdb.estimate-num-keys&quot;</span> : <span class="hljs-number">61</span>, 
-      <span class="hljs-string">&quot;rocksdb.estimate-live-data-size&quot;</span> : <span class="hljs-number">480573</span>, 
-      <span class="hljs-string">&quot;rocksdb.live-sst-files-size&quot;</span> : <span class="hljs-number">480573</span>, 
+      <span class="hljs-string">&quot;rocksdb.estimate-num-keys&quot;</span> : <span class="hljs-number">65</span>, 
+      <span class="hljs-string">&quot;rocksdb.estimate-live-data-size&quot;</span> : <span class="hljs-number">484263</span>, 
+      <span class="hljs-string">&quot;rocksdb.live-sst-files-size&quot;</span> : <span class="hljs-number">484263</span>, 
       <span class="hljs-string">&quot;rocksdb.block-cache-capacity&quot;</span> : <span class="hljs-number">19609604505</span>, 
       <span class="hljs-string">&quot;rocksdb.block-cache-usage&quot;</span> : <span class="hljs-number">96</span>, 
-      <span class="hljs-string">&quot;rocksdb.free-disk-space&quot;</span> : <span class="hljs-number">143357452288</span>, 
+      <span class="hljs-string">&quot;rocksdb.free-disk-space&quot;</span> : <span class="hljs-number">143356833792</span>, 
       <span class="hljs-string">&quot;rocksdb.total-disk-space&quot;</span> : <span class="hljs-number">491180957696</span> 
     } 
   }, 
-  <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-string">&quot;2022-07-18T18:12:21Z&quot;</span> 
+  <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-string">&quot;2022-07-18T19:06:10Z&quot;</span> 
 }

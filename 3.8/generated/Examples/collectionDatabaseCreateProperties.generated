@@ -1,8 +1,8 @@
 arangosh&gt; c = db._create(<span class="hljs-string">&quot;users&quot;</span>, { <span class="hljs-attr">waitForSync</span>: <span class="hljs-literal">true</span> });
-[ArangoCollection <span class="hljs-number">71103</span>, <span class="hljs-string">&quot;users&quot;</span> (type <span class="hljs-built_in">document</span>, status loaded)]
+[ArangoCollection <span class="hljs-number">71101</span>, <span class="hljs-string">&quot;users&quot;</span> (type <span class="hljs-built_in">document</span>, status loaded)]
 arangosh&gt; c.properties();
 { 
-  <span class="hljs-string">&quot;globallyUniqueId&quot;</span> : <span class="hljs-string">&quot;h443E5A653AA8/71103&quot;</span>, 
+  <span class="hljs-string">&quot;globallyUniqueId&quot;</span> : <span class="hljs-string">&quot;h7879F4C11D37/71101&quot;</span>, 
   <span class="hljs-string">&quot;isSystem&quot;</span> : <span class="hljs-literal">false</span>, 
   <span class="hljs-string">&quot;waitForSync&quot;</span> : <span class="hljs-literal">true</span>, 
   <span class="hljs-string">&quot;keyOptions&quot;</span> : { 
