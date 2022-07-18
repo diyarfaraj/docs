@@ -155,7 +155,7 @@ async function migrateMds(basePath, targetPath) {
         });
         content = content.replace(/^\s*@startDocuBlock\s+program_options_(\w+).*$/mg, "{% assign options = site.data[\"" + version.replace('.', '') + "-program-options-\$1\"] %}{% include program-option.html options=options name=\"\$1\" %}");
         content = content.replace(/^\s*@startDocuBlock\s+(\w+).*$/mg, "{% docublock \$1 %}")
-        content = content.replace(/^\s*tests\/js\/common\/aql\/iresearch\/model_cooking.bin.*$/mg, "/path_to_local_fasttext_model_directory/model_cooking.bin")
+        content = content.replace(/tests\/js\/common\/aql\/iresearch\/model_cooking\.bin/, "/path_to_local_fasttext_model_directory/model_cooking.bin")
 
         return {
             name: fileName,

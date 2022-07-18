@@ -1009,8 +1009,8 @@ Create and use a `classification` Analyzer with a stored "cooking" classifier
 to classify items.
 
 {% arangoshexample examplevar="examplevar" script="script" result="result" %}
-    @startDocuBlockInline analyzerSegmentationBreak
-    @EXAMPLE_ARANGOSH_OUTPUT{analyzerSegmentationBreak}
+    @startDocuBlockInline analyzerClassification
+    @EXAMPLE_ARANGOSH_OUTPUT{analyzerClassification}
       var analyzers = require("@arangodb/analyzers");
       var classifier_single = analyzers.save("classifier_single", "classification", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin" }, ["frequency", "norm", "position"]);
       var classifier_top_two = analyzers.save("classifier_double", "classification", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
@@ -1023,7 +1023,7 @@ to classify items.
     ~ analyzers.remove(classifier_single.name);
     ~ analyzers.remove(classifier_top_two.name);
     @END_EXAMPLE_ARANGOSH_OUTPUT
-    @endDocuBlock analyzerSegmentationBreak
+    @endDocuBlock analyzerClassification
 {% endarangoshexample %}
 {% include arangoshexample.html id=examplevar script=script result=result %}
 
@@ -1059,8 +1059,8 @@ Create and use a `nearest_neighbors` Analyzer with a stored "cooking" classifier
 to find similar terms.
 
 {% arangoshexample examplevar="examplevar" script="script" result="result" %}
-    @startDocuBlockInline analyzerSegmentationBreak
-    @EXAMPLE_ARANGOSH_OUTPUT{analyzerSegmentationBreak}
+    @startDocuBlockInline analyzerNearestNeighbors
+    @EXAMPLE_ARANGOSH_OUTPUT{analyzerNearestNeighbors}
       var analyzers = require("@arangodb/analyzers");
       var nn_single = analyzers.save("nn_single", "nearest_neighbors", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin" }, ["frequency", "norm", "position"]);
       var nn_top_two = analyzers.save("nn_double", "nearest_neighbors", { "model_location": "tests/js/common/aql/iresearch/model_cooking.bin", "top_k": 2 }, ["frequency", "norm", "position"]);
@@ -1073,7 +1073,7 @@ to find similar terms.
     ~ analyzers.remove(nn_single.name);
     ~ analyzers.remove(nn_top_two.name);
     @END_EXAMPLE_ARANGOSH_OUTPUT
-    @endDocuBlock analyzerSegmentationBreak
+    @endDocuBlock analyzerNearestNeighbors
 {% endarangoshexample %}
 {% include arangoshexample.html id=examplevar script=script result=result %}
 
