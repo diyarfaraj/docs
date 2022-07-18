@@ -424,7 +424,7 @@ class DocuBlockBlock < Liquid::Tag
         print(content)
         if @blockname == "analyzerClassification" || @blockname == "analyzerNearestNeighbors"
             content = content.gsub('tests/js/common/aql/iresearch/model_cooking.bin', '/path/to/model.bin')
-
+        end
         # should match migrate.js more or less :S
         content = content.gsub(/\]\((?!https?:)(.*?\.(html|md))(#[^\)]+)?\)/) {|s|
             link = $1.gsub(/(?<![A-Z\/])([A-Z])/) {|_|
