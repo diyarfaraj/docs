@@ -1,24 +1,24 @@
 arangosh&gt; <span class="hljs-keyword">var</span> analyzers = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;@arangodb/analyzers&quot;</span>);
-arangosh&gt; <span class="hljs-keyword">var</span> nn_single = analyzers.save(<span class="hljs-string">&quot;nn_single&quot;</span>, <span class="hljs-string">&quot;nearest_neighbors&quot;</span>, { <span class="hljs-string">&quot;model_location&quot;</span>: <span class="hljs-string">&quot;tests/js/common/aql/iresearch/model_cooking.bin&quot;</span> }, [<span class="hljs-string">&quot;frequency&quot;</span>, <span class="hljs-string">&quot;norm&quot;</span>, <span class="hljs-string">&quot;position&quot;</span>]);
-arangosh&gt; <span class="hljs-keyword">var</span> nn_top_two = analyzers.save(<span class="hljs-string">&quot;nn_double&quot;</span>, <span class="hljs-string">&quot;nearest_neighbors&quot;</span>, { <span class="hljs-string">&quot;model_location&quot;</span>: <span class="hljs-string">&quot;tests/js/common/aql/iresearch/model_cooking.bin&quot;</span>, <span class="hljs-string">&quot;top_k&quot;</span>: <span class="hljs-number">2</span> }, [<span class="hljs-string">&quot;frequency&quot;</span>, <span class="hljs-string">&quot;norm&quot;</span>, <span class="hljs-string">&quot;position&quot;</span>]);
+arangosh&gt; <span class="hljs-keyword">var</span> nn_single = analyzers.save(<span class="hljs-string">&quot;nn_single&quot;</span>, <span class="hljs-string">&quot;nearest_neighbors&quot;</span>, { <span class="hljs-string">&quot;model_location&quot;</span>: <span class="hljs-string">&quot;path/to/model.bin&quot;</span> }, [<span class="hljs-string">&quot;frequency&quot;</span>, <span class="hljs-string">&quot;norm&quot;</span>, <span class="hljs-string">&quot;position&quot;</span>]);
+arangosh&gt; <span class="hljs-keyword">var</span> nn_top_two = analyzers.save(<span class="hljs-string">&quot;nn_double&quot;</span>, <span class="hljs-string">&quot;nearest_neighbors&quot;</span>, { <span class="hljs-string">&quot;model_location&quot;</span>: <span class="hljs-string">&quot;path/to/model.bin&quot;</span>, <span class="hljs-string">&quot;top_k&quot;</span>: <span class="hljs-number">2</span> }, [<span class="hljs-string">&quot;frequency&quot;</span>, <span class="hljs-string">&quot;norm&quot;</span>, <span class="hljs-string">&quot;position&quot;</span>]);
 arangosh&gt; db._query(<span class="hljs-string">`LET str = &quot;salt, oil&quot;
 ........&gt;    RETURN {
 ........&gt;      &quot;all&quot;: TOKENS(str, &quot;nn_single&quot;),
 ........&gt;      &quot;double&quot;: TOKENS(str, &quot;nn_double&quot;)
 ........&gt;    }
 ........&gt; `</span>);
-[ 
-  { 
-    <span class="hljs-string">&quot;all&quot;</span> : [ 
-      <span class="hljs-string">&quot;tube\&quot;&quot;</span>, 
-      <span class="hljs-string">&quot;mr&quot;</span> 
-    ], 
-    <span class="hljs-string">&quot;double&quot;</span> : [ 
-      <span class="hljs-string">&quot;tube\&quot;&quot;</span>, 
-      <span class="hljs-string">&quot;\&quot;breather&quot;</span>, 
-      <span class="hljs-string">&quot;stockpot&quot;</span>, 
-      <span class="hljs-string">&quot;spruce&quot;</span> 
-    ] 
-  } 
+[
+  {
+    <span class="hljs-string">&quot;all&quot;</span> : [
+      <span class="hljs-string">&quot;tube\&quot;&quot;</span>,
+      <span class="hljs-string">&quot;mr&quot;</span>
+    ],
+    <span class="hljs-string">&quot;double&quot;</span> : [
+      <span class="hljs-string">&quot;tube\&quot;&quot;</span>,
+      <span class="hljs-string">&quot;\&quot;breather&quot;</span>,
+      <span class="hljs-string">&quot;stockpot&quot;</span>,
+      <span class="hljs-string">&quot;spruce&quot;</span>
+    ]
+  }
 ]
 [object ArangoQueryCursor, <span class="hljs-attr">count</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">cached</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">hasMore</span>: <span class="hljs-literal">false</span>]
