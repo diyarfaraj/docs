@@ -1,6 +1,6 @@
 <span class="hljs-meta">shell&gt;</span><span class="bash"> curl -X POST --header <span class="hljs-string">&#x27;accept: application/json&#x27;</span> --data-binary @- --dump - http://localhost:8529/_admin/backup/delete</span> &lt;&lt;EOF
 { 
-  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;2022-07-19T17.01.57Z_4dc24f46-e609-462c-9b86-d679610a90b1&quot;</span> 
+  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;2022-07-19T18.27.05Z_c1f85457-39f2-4a4d-a318-2d8949aec227&quot;</span> 
 }
 EOF
 

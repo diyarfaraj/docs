@@ -20,7 +20,7 @@ arangosh&gt; db._query(<span class="hljs-string">`
     <span class="hljs-string">&quot;filtered&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;httpRequests&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;fullCount&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.0008464940001431387</span>, 
+    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.0008357999995496357</span>, 
     <span class="hljs-string">&quot;peakMemoryUsage&quot;</span> : <span class="hljs-number">32768</span> 
   } 
 }
@@ -45,7 +45,7 @@ arangosh&gt; db._query({
     <span class="hljs-string">&quot;filtered&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;httpRequests&quot;</span> : <span class="hljs-number">0</span>, 
     <span class="hljs-string">&quot;fullCount&quot;</span> : <span class="hljs-number">0</span>, 
-    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.0008046190000641218</span>, 
+    <span class="hljs-string">&quot;executionTime&quot;</span> : <span class="hljs-number">0.0008105540000542533</span>, 
     <span class="hljs-string">&quot;peakMemoryUsage&quot;</span> : <span class="hljs-number">32768</span> 
   } 
 }

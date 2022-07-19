@@ -9,11 +9,11 @@ x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
 x-content-type-options: nosniff
 
 { 
-  <span class="hljs-string">&quot;time&quot;</span> : <span class="hljs-string">&quot;2022-07-19T17:02:47Z&quot;</span>, 
-  <span class="hljs-string">&quot;tickMin&quot;</span> : <span class="hljs-string">&quot;175557&quot;</span>, 
-  <span class="hljs-string">&quot;tickMax&quot;</span> : <span class="hljs-string">&quot;180536&quot;</span>, 
+  <span class="hljs-string">&quot;time&quot;</span> : <span class="hljs-string">&quot;2022-07-19T18:27:48Z&quot;</span>, 
+  <span class="hljs-string">&quot;tickMin&quot;</span> : <span class="hljs-string">&quot;175540&quot;</span>, 
+  <span class="hljs-string">&quot;tickMax&quot;</span> : <span class="hljs-string">&quot;180499&quot;</span>, 
   <span class="hljs-string">&quot;server&quot;</span> : { 
     <span class="hljs-string">&quot;version&quot;</span> : <span class="hljs-string">&quot;3.10.0-devel&quot;</span>, 
-    <span class="hljs-string">&quot;serverId&quot;</span> : <span class="hljs-string">&quot;90429884515172&quot;</span> 
+    <span class="hljs-string">&quot;serverId&quot;</span> : <span class="hljs-string">&quot;97438156193419&quot;</span> 
   } 
 }

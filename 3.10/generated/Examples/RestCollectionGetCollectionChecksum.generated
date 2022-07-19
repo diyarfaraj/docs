@@ -3,7 +3,7 @@
 HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 content-type: application/json
 connection: Keep-Alive
-content-length: <span class="hljs-number">193</span>
+content-length: <span class="hljs-number">194</span>
 location: <span class="hljs-regexp">/_db/</span>_system/_api/collection/products/checksum
 server: ArangoDB
 x-arango-queue-time-seconds: <span class="hljs-number">0.000000</span>
@@ -16,8 +16,8 @@ x-content-type-options: nosniff
   <span class="hljs-string">&quot;status&quot;</span> : <span class="hljs-number">3</span>, 
   <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-number">2</span>, 
   <span class="hljs-string">&quot;name&quot;</span> : <span class="hljs-string">&quot;products&quot;</span>, 
-  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;66984&quot;</span>, 
-  <span class="hljs-string">&quot;revision&quot;</span> : <span class="hljs-string">&quot;_efbnWty--_&quot;</span>, 
-  <span class="hljs-string">&quot;globallyUniqueId&quot;</span> : <span class="hljs-string">&quot;h523ED924C364/66984&quot;</span>, 
-  <span class="hljs-string">&quot;checksum&quot;</span> : <span class="hljs-string">&quot;1831662561709695881&quot;</span> 
+  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;66976&quot;</span>, 
+  <span class="hljs-string">&quot;revision&quot;</span> : <span class="hljs-string">&quot;_efc1L5G--_&quot;</span>, 
+  <span class="hljs-string">&quot;globallyUniqueId&quot;</span> : <span class="hljs-string">&quot;h589E96AFFE8B/66976&quot;</span>, 
+  <span class="hljs-string">&quot;checksum&quot;</span> : <span class="hljs-string">&quot;15836604143076991836&quot;</span> 
 }

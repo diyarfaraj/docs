@@ -12,20 +12,20 @@ x-content-type-options: nosniff
   <span class="hljs-string">&quot;deployment&quot;</span> : { 
     <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-string">&quot;cluster&quot;</span>, 
     <span class="hljs-string">&quot;servers&quot;</span> : { 
-      <span class="hljs-string">&quot;CRDN-50b2f740-de1e-4270-99d0-62d6f6afb249&quot;</span> : { 
-        <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;CRDN-50b2f740-de1e-4270-99d0-62d6f6afb249&quot;</span>, 
+      <span class="hljs-string">&quot;CRDN-b7e9b2d9-4727-4a65-acce-c3c18c970fad&quot;</span> : { 
+        <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;CRDN-b7e9b2d9-4727-4a65-acce-c3c18c970fad&quot;</span>, 
         <span class="hljs-string">&quot;alias&quot;</span> : <span class="hljs-string">&quot;Coordinator0001&quot;</span>, 
-        <span class="hljs-string">&quot;endpoint&quot;</span> : <span class="hljs-string">&quot;tcp://127.0.0.1:5279&quot;</span>, 
+        <span class="hljs-string">&quot;endpoint&quot;</span> : <span class="hljs-string">&quot;tcp://127.0.0.1:28925&quot;</span>, 
         <span class="hljs-string">&quot;role&quot;</span> : <span class="hljs-string">&quot;COORDINATOR&quot;</span>, 
         <span class="hljs-string">&quot;maintenance&quot;</span> : <span class="hljs-literal">false</span>, 
         <span class="hljs-string">&quot;readOnly&quot;</span> : <span class="hljs-literal">false</span>, 
         <span class="hljs-string">&quot;version&quot;</span> : <span class="hljs-string">&quot;3.10.0-devel&quot;</span>, 
-        <span class="hljs-string">&quot;build&quot;</span> : <span class="hljs-string">&quot;heads/feature/docs-for-3.10-analyzers-0-ge1aaa686da7&quot;</span>, 
+        <span class="hljs-string">&quot;build&quot;</span> : <span class="hljs-string">&quot;heads/feature/docs-for-3.10-analyzers-0-g59b25ef9c5b&quot;</span>, 
         <span class="hljs-string">&quot;license&quot;</span> : <span class="hljs-string">&quot;enterprise&quot;</span>, 
         <span class="hljs-string">&quot;os&quot;</span> : <span class="hljs-string">&quot;Linux version 5.13.0-1031-aws (buildd@lcy02-amd64-083) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #35~20.04.1-Ubuntu SMP Mon Jun 13 22:30:30 UTC 2022&quot;</span>, 
         <span class="hljs-string">&quot;platform&quot;</span> : <span class="hljs-string">&quot;linux&quot;</span>, 
         <span class="hljs-string">&quot;physicalMemory&quot;</span> : { 
-          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">74166820864</span>, 
+          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">73638338560</span>, 
           <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         <span class="hljs-string">&quot;numberOfCores&quot;</span> : { 
@@ -33,32 +33,32 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         <span class="hljs-string">&quot;processStats&quot;</span> : { 
-          <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">5.771566152572632</span>, 
+          <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">4.253662586212158</span>, 
           <span class="hljs-string">&quot;numberOfThreads&quot;</span> : <span class="hljs-number">49</span>, 
-          <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">837849088</span>, 
-          <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">114405376</span> 
+          <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">831557632</span>, 
+          <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">114016256</span> 
         }, 
         <span class="hljs-string">&quot;cpuStats&quot;</span> : { 
-          <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">5.208636797449691</span>, 
-          <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.265703554614682</span>, 
-          <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">92.3819049692643</span>, 
-          <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.13701671050179207</span> 
+          <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">7.822177983623583</span>, 
+          <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.5221608004899667</span>, 
+          <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">89.20549609619653</span>, 
+          <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.3452160803788073</span> 
         } 
       }, 
-      <span class="hljs-string">&quot;PRMR-47a031a1-0fa6-4a13-9165-65645be462a1&quot;</span> : { 
-        <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;PRMR-47a031a1-0fa6-4a13-9165-65645be462a1&quot;</span>, 
+      <span class="hljs-string">&quot;PRMR-075d78f1-ebeb-44a5-ab87-d8f1baa5e813&quot;</span> : { 
+        <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;PRMR-075d78f1-ebeb-44a5-ab87-d8f1baa5e813&quot;</span>, 
         <span class="hljs-string">&quot;alias&quot;</span> : <span class="hljs-string">&quot;DBServer0001&quot;</span>, 
-        <span class="hljs-string">&quot;endpoint&quot;</span> : <span class="hljs-string">&quot;tcp://127.0.0.1:25628&quot;</span>, 
+        <span class="hljs-string">&quot;endpoint&quot;</span> : <span class="hljs-string">&quot;tcp://127.0.0.1:16546&quot;</span>, 
         <span class="hljs-string">&quot;role&quot;</span> : <span class="hljs-string">&quot;PRIMARY&quot;</span>, 
         <span class="hljs-string">&quot;maintenance&quot;</span> : <span class="hljs-literal">false</span>, 
         <span class="hljs-string">&quot;readOnly&quot;</span> : <span class="hljs-literal">false</span>, 
         <span class="hljs-string">&quot;version&quot;</span> : <span class="hljs-string">&quot;3.10.0-devel&quot;</span>, 
-        <span class="hljs-string">&quot;build&quot;</span> : <span class="hljs-string">&quot;heads/feature/docs-for-3.10-analyzers-0-ge1aaa686da7&quot;</span>, 
+        <span class="hljs-string">&quot;build&quot;</span> : <span class="hljs-string">&quot;heads/feature/docs-for-3.10-analyzers-0-g59b25ef9c5b&quot;</span>, 
         <span class="hljs-string">&quot;license&quot;</span> : <span class="hljs-string">&quot;enterprise&quot;</span>, 
         <span class="hljs-string">&quot;os&quot;</span> : <span class="hljs-string">&quot;Linux version 5.13.0-1031-aws (buildd@lcy02-amd64-083) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #35~20.04.1-Ubuntu SMP Mon Jun 13 22:30:30 UTC 2022&quot;</span>, 
         <span class="hljs-string">&quot;platform&quot;</span> : <span class="hljs-string">&quot;linux&quot;</span>, 
         <span class="hljs-string">&quot;physicalMemory&quot;</span> : { 
-          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">74166820864</span>, 
+          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">73638338560</span>, 
           <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         <span class="hljs-string">&quot;numberOfCores&quot;</span> : { 
@@ -66,70 +66,70 @@ x-content-type-options: nosniff
           <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
         }, 
         <span class="hljs-string">&quot;processStats&quot;</span> : { 
-          <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">6.2735772132873535</span>, 
+          <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">4.755602836608887</span>, 
           <span class="hljs-string">&quot;numberOfThreads&quot;</span> : <span class="hljs-number">99</span>, 
           <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">1272176640</span>, 
-          <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">164847616</span> 
+          <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">165085184</span> 
         }, 
         <span class="hljs-string">&quot;cpuStats&quot;</span> : { 
-          <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">5.208636353762891</span>, 
-          <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.265703361615477</span>, 
-          <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">92.38190561819574</span>, 
-          <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.13701669883031098</span> 
+          <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">7.8221777256398495</span>, 
+          <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.522160717306426</span>, 
+          <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">89.20549645221072</span>, 
+          <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.3452160689932145</span> 
         }, 
         <span class="hljs-string">&quot;engineStats&quot;</span> : { 
-          <span class="hljs-string">&quot;cache.limit&quot;</span> : <span class="hljs-number">18004834304</span>, 
-          <span class="hljs-string">&quot;cache.allocated&quot;</span> : <span class="hljs-number">1090824</span>, 
-          <span class="hljs-string">&quot;rocksdb.estimate-num-keys&quot;</span> : <span class="hljs-number">48</span>, 
-          <span class="hljs-string">&quot;rocksdb.estimate-live-data-size&quot;</span> : <span class="hljs-number">0</span>, 
-          <span class="hljs-string">&quot;rocksdb.live-sst-files-size&quot;</span> : <span class="hljs-number">0</span>, 
-          <span class="hljs-string">&quot;rocksdb.block-cache-capacity&quot;</span> : <span class="hljs-number">21605801164</span>, 
-          <span class="hljs-string">&quot;rocksdb.block-cache-usage&quot;</span> : <span class="hljs-number">96</span>, 
-          <span class="hljs-string">&quot;rocksdb.free-disk-space&quot;</span> : <span class="hljs-number">233949671424</span>, 
-          <span class="hljs-string">&quot;rocksdb.total-disk-space&quot;</span> : <span class="hljs-number">266402316288</span> 
-        } 
-      }, 
-      <span class="hljs-string">&quot;PRMR-4a2cbd5c-b77b-4007-9f30-d3469085a410&quot;</span> : { 
-        <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;PRMR-4a2cbd5c-b77b-4007-9f30-d3469085a410&quot;</span>, 
-        <span class="hljs-string">&quot;alias&quot;</span> : <span class="hljs-string">&quot;DBServer0002&quot;</span>, 
-        <span class="hljs-string">&quot;endpoint&quot;</span> : <span class="hljs-string">&quot;tcp://127.0.0.1:11234&quot;</span>, 
-        <span class="hljs-string">&quot;role&quot;</span> : <span class="hljs-string">&quot;PRIMARY&quot;</span>, 
-        <span class="hljs-string">&quot;maintenance&quot;</span> : <span class="hljs-literal">false</span>, 
-        <span class="hljs-string">&quot;readOnly&quot;</span> : <span class="hljs-literal">false</span>, 
-        <span class="hljs-string">&quot;version&quot;</span> : <span class="hljs-string">&quot;3.10.0-devel&quot;</span>, 
-        <span class="hljs-string">&quot;build&quot;</span> : <span class="hljs-string">&quot;heads/feature/docs-for-3.10-analyzers-0-ge1aaa686da7&quot;</span>, 
-        <span class="hljs-string">&quot;license&quot;</span> : <span class="hljs-string">&quot;enterprise&quot;</span>, 
-        <span class="hljs-string">&quot;os&quot;</span> : <span class="hljs-string">&quot;Linux version 5.13.0-1031-aws (buildd@lcy02-amd64-083) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #35~20.04.1-Ubuntu SMP Mon Jun 13 22:30:30 UTC 2022&quot;</span>, 
-        <span class="hljs-string">&quot;platform&quot;</span> : <span class="hljs-string">&quot;linux&quot;</span>, 
-        <span class="hljs-string">&quot;physicalMemory&quot;</span> : { 
-          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">74166820864</span>, 
-          <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
-        }, 
-        <span class="hljs-string">&quot;numberOfCores&quot;</span> : { 
-          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">36</span>, 
-          <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
-        }, 
-        <span class="hljs-string">&quot;processStats&quot;</span> : { 
-          <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">6.775143623352051</span>, 
-          <span class="hljs-string">&quot;numberOfThreads&quot;</span> : <span class="hljs-number">98</span>, 
-          <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">1300996096</span>, 
-          <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">170311680</span> 
-        }, 
-        <span class="hljs-string">&quot;cpuStats&quot;</span> : { 
-          <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">5.208636353762891</span>, 
-          <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.265703361615477</span>, 
-          <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">92.38190561819574</span>, 
-          <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.13701669883031098</span> 
-        }, 
-        <span class="hljs-string">&quot;engineStats&quot;</span> : { 
-          <span class="hljs-string">&quot;cache.limit&quot;</span> : <span class="hljs-number">18004834304</span>, 
+          <span class="hljs-string">&quot;cache.limit&quot;</span> : <span class="hljs-number">17872713728</span>, 
           <span class="hljs-string">&quot;cache.allocated&quot;</span> : <span class="hljs-number">1090824</span>, 
           <span class="hljs-string">&quot;rocksdb.estimate-num-keys&quot;</span> : <span class="hljs-number">74</span>, 
           <span class="hljs-string">&quot;rocksdb.estimate-live-data-size&quot;</span> : <span class="hljs-number">0</span>, 
           <span class="hljs-string">&quot;rocksdb.live-sst-files-size&quot;</span> : <span class="hljs-number">0</span>, 
-          <span class="hljs-string">&quot;rocksdb.block-cache-capacity&quot;</span> : <span class="hljs-number">21605801164</span>, 
+          <span class="hljs-string">&quot;rocksdb.block-cache-capacity&quot;</span> : <span class="hljs-number">21447256473</span>, 
           <span class="hljs-string">&quot;rocksdb.block-cache-usage&quot;</span> : <span class="hljs-number">96</span>, 
-          <span class="hljs-string">&quot;rocksdb.free-disk-space&quot;</span> : <span class="hljs-number">233949671424</span>, 
+          <span class="hljs-string">&quot;rocksdb.free-disk-space&quot;</span> : <span class="hljs-number">230357544960</span>, 
+          <span class="hljs-string">&quot;rocksdb.total-disk-space&quot;</span> : <span class="hljs-number">266402316288</span> 
+        } 
+      }, 
+      <span class="hljs-string">&quot;PRMR-8c65269c-a1f6-4baf-9e92-7e3daa0e6809&quot;</span> : { 
+        <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;PRMR-8c65269c-a1f6-4baf-9e92-7e3daa0e6809&quot;</span>, 
+        <span class="hljs-string">&quot;alias&quot;</span> : <span class="hljs-string">&quot;DBServer0002&quot;</span>, 
+        <span class="hljs-string">&quot;endpoint&quot;</span> : <span class="hljs-string">&quot;tcp://127.0.0.1:21877&quot;</span>, 
+        <span class="hljs-string">&quot;role&quot;</span> : <span class="hljs-string">&quot;PRIMARY&quot;</span>, 
+        <span class="hljs-string">&quot;maintenance&quot;</span> : <span class="hljs-literal">false</span>, 
+        <span class="hljs-string">&quot;readOnly&quot;</span> : <span class="hljs-literal">false</span>, 
+        <span class="hljs-string">&quot;version&quot;</span> : <span class="hljs-string">&quot;3.10.0-devel&quot;</span>, 
+        <span class="hljs-string">&quot;build&quot;</span> : <span class="hljs-string">&quot;heads/feature/docs-for-3.10-analyzers-0-g59b25ef9c5b&quot;</span>, 
+        <span class="hljs-string">&quot;license&quot;</span> : <span class="hljs-string">&quot;enterprise&quot;</span>, 
+        <span class="hljs-string">&quot;os&quot;</span> : <span class="hljs-string">&quot;Linux version 5.13.0-1031-aws (buildd@lcy02-amd64-083) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #35~20.04.1-Ubuntu SMP Mon Jun 13 22:30:30 UTC 2022&quot;</span>, 
+        <span class="hljs-string">&quot;platform&quot;</span> : <span class="hljs-string">&quot;linux&quot;</span>, 
+        <span class="hljs-string">&quot;physicalMemory&quot;</span> : { 
+          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">73638338560</span>, 
+          <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
+        }, 
+        <span class="hljs-string">&quot;numberOfCores&quot;</span> : { 
+          <span class="hljs-string">&quot;value&quot;</span> : <span class="hljs-number">36</span>, 
+          <span class="hljs-string">&quot;overridden&quot;</span> : <span class="hljs-literal">false</span> 
+        }, 
+        <span class="hljs-string">&quot;processStats&quot;</span> : { 
+          <span class="hljs-string">&quot;processUptime&quot;</span> : <span class="hljs-number">5.25715446472168</span>, 
+          <span class="hljs-string">&quot;numberOfThreads&quot;</span> : <span class="hljs-number">98</span>, 
+          <span class="hljs-string">&quot;virtualSize&quot;</span> : <span class="hljs-number">1303617536</span>, 
+          <span class="hljs-string">&quot;residentSetSize&quot;</span> : <span class="hljs-number">170004480</span> 
+        }, 
+        <span class="hljs-string">&quot;cpuStats&quot;</span> : { 
+          <span class="hljs-string">&quot;userPercent&quot;</span> : <span class="hljs-number">7.8221777256398495</span>, 
+          <span class="hljs-string">&quot;systemPercent&quot;</span> : <span class="hljs-number">2.522160717306426</span>, 
+          <span class="hljs-string">&quot;idlePercent&quot;</span> : <span class="hljs-number">89.20549645221072</span>, 
+          <span class="hljs-string">&quot;iowaitPercent&quot;</span> : <span class="hljs-number">0.3452160689932145</span> 
+        }, 
+        <span class="hljs-string">&quot;engineStats&quot;</span> : { 
+          <span class="hljs-string">&quot;cache.limit&quot;</span> : <span class="hljs-number">17872713728</span>, 
+          <span class="hljs-string">&quot;cache.allocated&quot;</span> : <span class="hljs-number">1090824</span>, 
+          <span class="hljs-string">&quot;rocksdb.estimate-num-keys&quot;</span> : <span class="hljs-number">74</span>, 
+          <span class="hljs-string">&quot;rocksdb.estimate-live-data-size&quot;</span> : <span class="hljs-number">0</span>, 
+          <span class="hljs-string">&quot;rocksdb.live-sst-files-size&quot;</span> : <span class="hljs-number">0</span>, 
+          <span class="hljs-string">&quot;rocksdb.block-cache-capacity&quot;</span> : <span class="hljs-number">21447256473</span>, 
+          <span class="hljs-string">&quot;rocksdb.block-cache-usage&quot;</span> : <span class="hljs-number">96</span>, 
+          <span class="hljs-string">&quot;rocksdb.free-disk-space&quot;</span> : <span class="hljs-number">230357544960</span>, 
           <span class="hljs-string">&quot;rocksdb.total-disk-space&quot;</span> : <span class="hljs-number">266402316288</span> 
         } 
       } 
@@ -147,5 +147,5 @@ x-content-type-options: nosniff
       <span class="hljs-string">&quot;servers&quot;</span> : <span class="hljs-number">2</span> 
     } 
   }, 
-  <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-string">&quot;2022-07-19T17:03:01Z&quot;</span> 
+  <span class="hljs-string">&quot;date&quot;</span> : <span class="hljs-string">&quot;2022-07-19T18:28:01Z&quot;</span> 
 }
