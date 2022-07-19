@@ -8,11 +8,11 @@ server: ArangoDB
 x-content-type-options: nosniff
 
 { 
-  <span class="hljs-string">&quot;time&quot;</span> : <span class="hljs-string">&quot;2022-07-18T18:57:38Z&quot;</span>, 
-  <span class="hljs-string">&quot;tickMin&quot;</span> : <span class="hljs-string">&quot;175392&quot;</span>, 
-  <span class="hljs-string">&quot;tickMax&quot;</span> : <span class="hljs-string">&quot;180412&quot;</span>, 
+  <span class="hljs-string">&quot;time&quot;</span> : <span class="hljs-string">&quot;2022-07-19T09:22:11Z&quot;</span>, 
+  <span class="hljs-string">&quot;tickMin&quot;</span> : <span class="hljs-string">&quot;175355&quot;</span>, 
+  <span class="hljs-string">&quot;tickMax&quot;</span> : <span class="hljs-string">&quot;180369&quot;</span>, 
   <span class="hljs-string">&quot;server&quot;</span> : { 
     <span class="hljs-string">&quot;version&quot;</span> : <span class="hljs-string">&quot;3.8.8&quot;</span>, 
-    <span class="hljs-string">&quot;serverId&quot;</span> : <span class="hljs-string">&quot;132465192672567&quot;</span> 
+    <span class="hljs-string">&quot;serverId&quot;</span> : <span class="hljs-string">&quot;102359042516997&quot;</span> 
   } 
 }
