@@ -1,6 +1,6 @@
 arangosh&gt; db.example.properties();
 { 
-  <span class="hljs-string">&quot;globallyUniqueId&quot;</span> : <span class="hljs-string">&quot;hB1946C62B939/71266&quot;</span>, 
+  <span class="hljs-string">&quot;globallyUniqueId&quot;</span> : <span class="hljs-string">&quot;h7879F4C11D37/71270&quot;</span>, 
   <span class="hljs-string">&quot;isSystem&quot;</span> : <span class="hljs-literal">false</span>, 
   <span class="hljs-string">&quot;waitForSync&quot;</span> : <span class="hljs-literal">false</span>, 
   <span class="hljs-string">&quot;keyOptions&quot;</span> : { 
